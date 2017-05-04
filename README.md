@@ -9,6 +9,6 @@
 ### 使用:<br>
 要提供两个数据,第一个视频翻页数量,就是有几页<br>
 这是第一个参数:<br>
-![翻页数目](https://ws1.sinaimg.cn/large/88b1b9f5ly1ff9jxxsg4hj20h8025mx2.jpg)
+![翻页数目](http://7xqu3i.com1.z0.glb.clouddn.com/snipaste_20170504_192257.png)
 这是第二个参数:<br>
-![视频aid](https://ws1.sinaimg.cn/large/88b1b9f5ly1ff9jylvdjlj20j708sjwt.jpg)
+![视频aid](http://7xqu3i.com1.z0.glb.clouddn.com/snipaste_20170504_192351.png)
