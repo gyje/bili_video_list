@@ -7,8 +7,5 @@
 **代码仍然很丑**<br>
 **就是自己用的**
 ### 使用:<br>
-要提供两个数据,第一个视频翻页数量,就是有几页<br>
-这是第一个参数:<br>
-![翻页数目](http://7xqu3i.com1.z0.glb.clouddn.com/snipaste_20170504_192257.png)<br>
-这是第二个参数:<br>
+要提供一个数据,红圈内的数字<br>
 ![视频aid](http://7xqu3i.com1.z0.glb.clouddn.com/snipaste_20170504_192351.png)
