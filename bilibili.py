@@ -1,4 +1,4 @@
-﻿import requests
+import requests
 import json
 import time
 headers={
@@ -15,7 +15,6 @@ headers={
 fob=open("video_info.txt","w+",encoding="utf-8")
 space_aid=input("空间id\n")
 startime=time.time()
-# pages_num=int(input("空间视频页数量\n"))+1
 pages_num_url="http://space.bilibili.com/ajax/member/getSubmitVideos?mid="+space_aid+"&pagesize=30&tid=0&page=1&keyword=&order=senddate&_=1493786538801"
 pages_num=int(requests.get(pages_num_url).json()["data"]["pages"])
 format = '%Y-%m-%d %H:%M:%S'
