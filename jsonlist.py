@@ -18,7 +18,6 @@ startime=time.time()
 pages_num_url="http://space.bilibili.com/ajax/member/getSubmitVideos?mid="+space_aid+"&pagesize=30&tid=0&page=1&keyword=&order=senddate&_=1493786538801"
 pages_num=int(requests.get(pages_num_url).json()["data"]["pages"])
 format = '%Y-%m-%d %H:%M:%S'
-status=0
 for i in range(1,pages_num):
 	url="http://space.bilibili.com/ajax/member/getSubmitVideos?mid="+space_aid+"&pagesize=30&tid=0&page="+str(i)+"&keyword=&order=senddate&_=1493786538801"
 	html_json=requests.get(url,headers=headers)
