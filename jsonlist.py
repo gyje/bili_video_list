@@ -13,9 +13,12 @@ headers={
 'Connection':'keep-alive'
 }
 fob=open("video_info.txt","w+",encoding="utf-8")
-pages_num=int(input("空间视频页数量\n"))+1
 space_aid=input("空间id\n")
+startime=time.time()
+pages_num_url="http://space.bilibili.com/ajax/member/getSubmitVideos?mid="+space_aid+"&pagesize=30&tid=0&page=1&keyword=&order=senddate&_=1493786538801"
+pages_num=int(requests.get(pages_num_url).json()["data"]["pages"])
 format = '%Y-%m-%d %H:%M:%S'
+status=0
 for i in range(1,pages_num):
 	url="http://space.bilibili.com/ajax/member/getSubmitVideos?mid="+space_aid+"&pagesize=30&tid=0&page="+str(i)+"&keyword=&order=senddate&_=1493786538801"
 	html_json=requests.get(url,headers=headers)
@@ -33,3 +36,4 @@ for i in range(1,pages_num):
 		fob.write("视频时长:"+video_json_list["data"]["vlist"][l]["length"]+"\n\n\n\n")
 	time.sleep(2)
 fob.close()
+print (time.time()-startime)
